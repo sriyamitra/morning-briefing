@@ -33,8 +33,16 @@ const CONFIG = {
 // RSS feeds — free, no key needed
 // AI uses 3 focused queries merged together to get fresh, varied coverage
 const RSS_FEEDS = {
-  world: ["https://news.google.com/rss/headlines/section/topic/WORLD?hl=en-US&gl=US&ceid=US:en"],
-  india: ["https://news.google.com/rss/headlines/section/topic/NATION?hl=en-IN&gl=IN&ceid=IN:en"],
+  world: [
+    "https://news.google.com/rss/search?q=world+news+when:1d&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=international+politics+economy+when:1d&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=global+conflict+diplomacy+when:1d&hl=en-US&gl=US&ceid=US:en",
+  ],
+  india: [
+    "https://news.google.com/rss/search?q=India+news+when:1d&hl=en-IN&gl=IN&ceid=IN:en",
+    "https://news.google.com/rss/search?q=India+politics+economy+when:1d&hl=en-IN&gl=IN&ceid=IN:en",
+    "https://news.google.com/rss/search?q=India+Modi+government+when:1d&hl=en-IN&gl=IN&ceid=IN:en",
+  ],
   ai: [
     "https://news.google.com/rss/search?q=artificial+intelligence+when:1d&hl=en-US&gl=US&ceid=US:en",
     "https://news.google.com/rss/search?q=OpenAI+OR+Anthropic+OR+Gemini+OR+ChatGPT+when:1d&hl=en-US&gl=US&ceid=US:en",
